@@ -1,7 +1,7 @@
 # conda create -n transformers python==3.10 ipykernel
 # conda activate transformers
 # python -m ipykernel install --user --name transformers
-pip install torch torchvision -i https://mirrors.ustc.edu.cn/pypi/simple
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 pip install -U transformers datasets evaluate accelerate timm -i https://mirrors.ustc.edu.cn/pypi/simple
 pip install qwen_vl_utils -i https://mirrors.ustc.edu.cn/pypi/simple
 
