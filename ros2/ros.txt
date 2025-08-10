@@ -1,0 +1,9 @@
+https://github.com/ros/class_loader.git
+https://github.com/ros/kdl_parser.git
+https://github.com/ros/pluginlib.git
+https://github.com/ros/resource_retriever.git
+https://github.com/ros/robot_state_publisher.git
+https://github.com/ros/ros_environment.git
+https://github.com/ros/ros_tutorials.git
+https://github.com/ros/urdfdom.git
+https://github.com/ros/urdfdom_headers.git
