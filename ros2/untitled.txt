@@ -2,7 +2,7 @@
 
 基础设施包 https://github.com/ros-infrastructure/infra-variants.git
 	ros-build-essential 面向ROS内部基础设施团队，提供基础构建工具集，包含特定于平台的工具集，cmake, git, python3
-	ros-dev-tools 面向ROS开发者，提供开发、构建工具，包含ros-build-extensions, bloom, colcon-common-extensions, rosdep, vcstool
+	ros-dev-tools 面向ROS开发者，提供开发、构建工具，包含ros-build-essential, bloom, colcon-common-extensions, rosdep, vcstool
 
 colcon工具 https://colcon.readthedocs.io
 
