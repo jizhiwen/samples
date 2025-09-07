@@ -9,8 +9,3 @@
 - ros-dev-tools 面向ROS开发者，提供开发、构建工具，包含ros-build-essential, bloom, colcon-common-extensions, rosdep, vcstool
 
 colcon https://colcon.readthedocs.io
-
-			
-		
-		
-		

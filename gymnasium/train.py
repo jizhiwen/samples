@@ -54,7 +54,14 @@ def train_agent(num_episodes=100_000):
 def analyzing_training_results(env):
     def get_moving_avgs(arr, window, convolution_mode):
         """Compute moving average to smooth noisy data."""
-        return np.convolve(np.array(arr).flatten(), np.ones(window), mode=convolution_mode) / window
+        return (
+            np.convolve(
+                np.array(arr).flatten(),
+                np.ones(window),
+                mode=convolution_mode,
+            )
+            / window
+        )
 
     # Smooth over a 500-episode window
     rolling_length = 500
@@ -77,7 +84,10 @@ def analyzing_training_results(env):
     # Training error (how much we're still learning)
     axs[2].set_title("Training Error")
     training_error_moving_average = get_moving_avgs(agent.training_error, rolling_length, "same")
-    axs[2].plot(range(len(training_error_moving_average)), training_error_moving_average)
+    axs[2].plot(
+        range(len(training_error_moving_average)),
+        training_error_moving_average,
+    )
     axs[2].set_ylabel("Temporal Difference Error")
     axs[2].set_xlabel("Step")
 

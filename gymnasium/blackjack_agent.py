@@ -53,8 +53,7 @@ class BlackjackAgent:
             return self.env.action_space.sample()
 
         # With probability (1-epsilon): exploit (best known action)
-        else:
-            return int(np.argmax(self.q_values[obs]))
+        return int(np.argmax(self.q_values[obs]))
 
     def update(
         self,
